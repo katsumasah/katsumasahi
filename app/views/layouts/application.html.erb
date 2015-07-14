@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <html lang="ja" > 
 <head>
+  
+  <%= stylesheet_link_tag "bootstrap", media: "all", "data-turbolinks-track" => true %>
+  
   <meta name="viewport" content="width=device-width"> 
   <title>H2M</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -11,7 +14,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  
+<p class="notice"><%= notice %></p> 
+<p class="alert"><%= alert %></p>
 <%= yield %>
 
 </body>
